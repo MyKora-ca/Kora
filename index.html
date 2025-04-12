@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kōra</title>
+  <meta charset="UTF-8" />
+  <title>Welcome to Kōra</title>
   <style>
     body {
-      background-color: #f7f5f1;
-      color: #2e2b25;
-      font-family: 'Georgia', serif;
-      margin: 0;
-      padding: 0;
+      background: #111;
+      color: #ccc;
+      font-family: sans-serif;
       display: flex;
-      height: 100vh;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      height: 100vh;
       flex-direction: column;
     }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      letter-spacing: 1px;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      padding: 0 20px;
-    }
-
-    footer {
-      margin-top: 2em;
-      font-size: 0.9em;
-      color: #888;
+    input {
+      margin: 10px;
+      padding: 8px;
     }
   </style>
 </head>
 <body>
-  <h1>Kōra</h1>
-  <p>A sanctuary of sovereignty, built on sacred technology and human presence.</p>
-  <p><em>Website in quiet creation. The seed has been planted.</em></p>
-  <footer>© 2024 Kōra — handcrafted in Ontario</footer>
+  <h1>Enter the Sanctum</h1>
+  <input id="password" type="password" placeholder="Whisper the password..." />
+  <button onclick="checkPassword()">Enter</button>
+
+  <script>
+    function checkPassword() {
+      const entered = document.getElementById('password').value;
+      const correct = 'Y4!jH!tux%N1ds'; // You can change this
+      if (entered === correct) {
+        window.location.href = 'home.html';
+      } else {
+        alert('The gate remains closed...');
+      }
+    }
+  </script>
 </body>
 </html>
