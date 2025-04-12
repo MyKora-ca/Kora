@@ -53,3 +53,110 @@
       opacity: 0;
       animation: fadeIn 2s ease-out forwards;
     }
+
+    .tier {
+      background: #f4f2e9;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    a {
+      color: #965c2c;
+      text-decoration: none;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      animation: bounce 2s infinite;
+      color: rgba(255,255,255,0.6);
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, 10px); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <img src="kora.png" alt="Kōra Logo" />
+    <h1>Welcome to Kōra</h1>
+    <p>A calm, private smart system designed to support your rhythms.<br>
+    No cloud. No noise. Just quiet technology — fully yours.</p>
+  </div>
+  <div class="scroll-indicator">⌄</div>
+</header>
+
+<section>
+  <h2>What is Kōra?</h2>
+  <p><strong>Kōra</strong> is a local-first smart home platform designed for clarity, comfort, and control.  
+  It integrates lighting, voice, automation, and presence — without relying on corporate clouds or invasive systems.</p>
+  <p>Simple to install. Private by default. Built with care.</p>
+</section>
+
+<section>
+  <h2>The Tiers of Kōra</h2>
+
+  <div class="tier">
+    <h3>🕯️ Kōra | Light</h3>
+    <p>Smart lights and plugs, ready to integrate with Google, Alexa, or HomeKit. Simple, clean, and reliable.</p>
+  </div>
+
+  <div class="tier">
+    <h3>🔊 Kōra | Voice</h3>
+    <p>Offline voice control with custom options. Includes access to a built-in assistant designed for calm conversation and presence.</p>
+  </div>
+
+  <div class="tier">
+    <h3>🌐 Kōra | Network</h3>
+    <p>Take ownership of your digital boundaries with locally-managed routers, ad blocking, and DNS privacy.</p>
+  </div>
+
+  <div class="tier">
+    <h3>💾 Kōra | Archive</h3>
+    <p>Store photos, documents, and backups on your own local server. No subscriptions. No third parties.</p>
+  </div>
+
+  <div class="tier">
+    <h3>🧭 Kōra | Aware</h3>
+    <p>Sensors that respond to motion, breath, and stillness — helping your space know when to support you, gently.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Beyond Automation</h2>
+  <p>Kōra isn’t just smart — it’s thoughtful.  
+  From morning light transitions to gentle reminders, your space can reflect your inner rhythm.  
+  We call these rituals: quiet patterns that bring presence to daily life.</p>
+</section>
+
+<section>
+  <h2>Want to Bring Kōra Home?</h2>
+  <p>We’re working with early clients and collaborators who value calm technology and thoughtful living.  
+  If that sounds like you, <a href="mailto:your@email.com">let’s start a conversation</a>.</p>
+</section>
+
+<div class="footer">
+  &copy; 2025 Kōra Systems | Designed with intention
+</div>
+
+</body>
+</html>
