@@ -11,6 +11,11 @@
     box-shadow: 0 0 30px rgba(0,0,0,0.1);
   }
 
+  .full-bleed {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+  }
   
   h1, h2 {
     font-family: 'Georgia', serif;
@@ -48,12 +53,12 @@
   
   .nav-bar li a {
     text-decoration: none;
-    color: #e6c4a5;
+    color: #b47e4e;
     transition: all 0.3s ease;
   }
   
   .nav-bar li a:hover {
-    color: #ffffff;
+    color: #a2643a;
     text-shadow: 0 0 5px rgba(230, 196, 165, 0.5);
     letter-spacing: 0.5px;
   }
