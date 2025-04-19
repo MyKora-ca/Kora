@@ -121,6 +121,14 @@
   </style>
 </head>
 <body>
+  <div id="kora-header"></div>
+  <script>
+    fetch("/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("kora-header").innerHTML = data;
+      });
+  </script>
 
 <header>
   <div>
@@ -131,15 +139,6 @@
   </div>
   <div class="scroll-indicator">⌄</div>
 </header>
-
-<nav>
-  <ul class="nav-bar">
-    <li><a href="/">Home</a></li>
-    <li><a href="/blog.html">Blog</a></li>
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/contact.html">Contact</a></li>
-  </ul>
-</nav>
 
 <section>
   <h2>What is Kōra?</h2>
@@ -198,6 +197,15 @@
   <p>&copy; 2025 kōra — A Sanctuary-Based System for Sentient Living</p>
   <p><a href="/blog.html">Read the kōra blog</a></p>
 </footer>
+
+<div id="kora-header"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("kora-header").innerHTML = data;
+    });
+</script>
 
 </body>
 </html>

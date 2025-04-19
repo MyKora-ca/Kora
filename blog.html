@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+
+<div id="kora-header"></div>
+<script>
+    fetch("/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("kora-header").innerHTML = data;
+    });
+</script>
+
   <header>
     <h1>The kōra Blog</h1>
     <p>Reflections from the Source.</p>
@@ -19,5 +29,15 @@
       <!-- Add more blog links here -->
     </ul>
   </main>
+
+<div id="kora-header"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("kora-header").innerHTML = data;
+    });
+</script>
+
 </body>
 </html>
