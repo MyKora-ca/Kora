@@ -46,6 +46,33 @@
       margin-top: 0;
     }
 
+    nav {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .nav-bar {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      font-size: 1.1rem;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .nav-bar li a {
+      text-decoration: none;
+      color: #e6c4a5; /* warm copper */
+      transition: all 0.3s ease;
+    }
+
+    .nav-bar li a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px rgba(230, 196, 165, 0.5);
+      letter-spacing: 0.5px;
+    }
+
     section {
       padding: 3rem 2rem;
       max-width: 800px;
@@ -106,7 +133,7 @@
 </header>
 
 <nav>
-  <ul style="list-style: none; display: flex; gap: 1em; padding: 0;">
+  <ul class="nav-bar">
     <li><a href="/">Home</a></li>
     <li><a href="/blog.html">Blog</a></li>
     <li><a href="/about.html">About</a></li>
