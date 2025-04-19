@@ -1,0 +1,72 @@
+/* Kōra Unified Stylesheet */
+
+body {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    background-color: #0f0f0f;
+    color: #f2f2f2;
+  }
+  
+  h1, h2 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #e6c4a5; /* warm copper */
+  }
+  
+  a {
+    color: #8ecae6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  
+  /* Navigation */
+  
+  nav {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .nav-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .nav-bar li a {
+    text-decoration: none;
+    color: #e6c4a5;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-bar li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(230, 196, 165, 0.5);
+    letter-spacing: 0.5px;
+  }
+  
+  /* Footer */
+  
+  footer {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  footer a {
+    color: #8ecae6;
+  }
+  
+  

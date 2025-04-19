@@ -4,121 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kōra | Calm Smart Living</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e1dccb;
-      color: #1a1a1a;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    header {
-      background-image: url('Header.webp');
-      background-size: cover;
-      background-position: center 35%;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 0 2px 5px rgba(0,0,0,0.6);
-      position: relative;
-    }
-
-    header div {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 2rem;
-      border-radius: 12px;
-      text-align: center;
-      max-width: 600px;
-      animation: fadeIn 2s ease-out;
-    }
-
-    header img {
-      width: 120px;
-      margin-bottom: 1rem;
-      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
-    }
-
-    h1, h2, h3 {
-      margin-top: 0;
-    }
-
-    nav {
-      margin-top: 2rem;
-      text-align: center;
-    }
-
-    .nav-bar {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-      font-size: 1.1rem;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    .nav-bar li a {
-      text-decoration: none;
-      color: #e6c4a5; /* warm copper */
-      transition: all 0.3s ease;
-    }
-
-    .nav-bar li a:hover {
-      color: #ffffff;
-      text-shadow: 0 0 5px rgba(230, 196, 165, 0.5);
-      letter-spacing: 0.5px;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 800px;
-      margin: auto;
-      opacity: 0;
-      animation: fadeIn 2s ease-out forwards;
-    }
-
-    .tier {
-      background: #f4f2e9;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      opacity: 0.6;
-    }
-
-    a {
-      color: #965c2c;
-      text-decoration: none;
-    }
-
-    .scroll-indicator {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.5rem;
-      animation: bounce 2s infinite;
-      color: rgba(255,255,255,0.6);
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translate(-50%, 0); }
-      50% { transform: translate(-50%, 10px); }
-    }
-  </style>
 </head>
 <body>
   <div id="kora-header"></div>
@@ -198,14 +83,14 @@
   <p><a href="/blog.html">Read the kōra blog</a></p>
 </footer>
 
-<div id="kora-header"></div>
-<script>
-  fetch("/footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("kora-header").innerHTML = data;
-    });
-</script>
+  <div id="kora-footer"></div>
+  <script>
+    fetch("/components/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("kora-footer").innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
