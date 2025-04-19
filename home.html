@@ -8,7 +8,7 @@
 <body>
   <div id="kora-header"></div>
   <script>
-    fetch("/header.html")
+    fetch("/components/header.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("kora-header").innerHTML = data;
